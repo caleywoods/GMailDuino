@@ -1,0 +1,12 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    nokogiri (1.5.0)
+    serialport (1.0.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nokogiri
+  serialport
