@@ -13,12 +13,12 @@ this to be compatible with an ethernet shield arduino.
 ###OSX###
 You can use launchd for this. Follow the steps below.
 
-*  You will need to create a .plist file and save it to~/Library/LaunchAgents. If LaunchAgents doesn't exist 
+*  You will need to create a .plist file and save it to ~/Library/LaunchAgents. If LaunchAgents doesn't exist 
 you'll need to create it. I've included a sample .plist file you can modify.
 
 *  Once you've saved the .plist file you need to do the following command in terminal:
 
-    launchctl load ~/Libary/LaunchAgents/org.caleywoods.gmailduino.plist
+    `launchctl load ~/Libary/LaunchAgents/org.caleywoods.gmailduino.plist`
 
 *  If you're uncomfortable with the above command you can also restart your computer to
 get the file loaded.
@@ -28,10 +28,11 @@ Follow the steps below.
 
 *  Setup the gmail.rb file to be executed on your set schedule with cron. In a terminal you can type
 
-    crontab -e
+    `crontab -e`
 
 *  Create a job such as:
-    0 * * * * USERNAME /path/to/gmail.rb
+
+    `0 * * * * USERNAME /path/to/gmail.rb`
 
 The above job sets gmail.rb to be executed every minute by the specified username.
 
@@ -43,7 +44,8 @@ Windows has scheduled tasks via control panel or through the AT command.
 Creating something to run every minute is stupid on windows because it's harder than it should be.
 
 *  In a command prompt type the following:
-    at 00:00 path\to\file
+
+    `at 00:00 path\to\file`
 
 *  This should create a scheduled task to run at midnight and execute your file, this is intential we're going
 to have to modify it in the gui.
