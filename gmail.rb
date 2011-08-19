@@ -4,8 +4,8 @@ require 'nokogiri'
 
 # Settings
 # make these your own
-USERNAME = "caley.w@gmail.com"
-PASSWORD = "w0wdudenicesh0t"
+USERNAME = "your_username@gmail.com"
+PASSWORD = "your_password"
 PROTO    = "https://"
 SERVER   = "mail.google.com"
 PATH     = "/gmail/feed/atom"
