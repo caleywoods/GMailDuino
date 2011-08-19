@@ -17,6 +17,7 @@ You can use launchd for this. Follow the steps below.
 you'll need to create it. I've included a sample .plist file you can modify.
 
 *  Once you've saved the .plist file you need to do the following command in terminal:
+
     launchctl load ~/Libary/LaunchAgents/org.caleywoods.gmailduino.plist
 
 *  If you're uncomfortable with the above command you can also restart your computer to
@@ -26,6 +27,7 @@ get the file loaded.
 Follow the steps below.
 
 *  Setup the gmail.rb file to be executed on your set schedule with cron. In a terminal you can type
+
     crontab -e
 
 *  Create a job such as:
