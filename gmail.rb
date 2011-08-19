@@ -6,9 +6,6 @@ require 'nokogiri'
 # make these your own
 USERNAME = "your_username@gmail.com"
 PASSWORD = "your_password"
-PROTO    = "https://"
-SERVER   = "mail.google.com"
-PATH     = "/gmail/feed/atom"
 
 # You can find this in the arduino
 # or antipasto IDE under Tools > Serial Port
@@ -35,9 +32,9 @@ def get_mail
 
   res = http.request req
 
-  feed = Nokogiri::XML(res.body)
+  feed = Nokogiri::XML res.body
 
-  count = mail_count(feed) #any new mails?
+  count = mail_count feed #any new mails?
 
   if count > 0
     ser.write 'Y' # yes there is new mail
